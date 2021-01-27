@@ -1,4 +1,4 @@
-Sample **CINEMA** example of Model C4 in .NET Core with EventStorming, ADR, ADL.
+Sample **CINEMA** example of Model C4 in .NET Core with EventStorming.
 ==============================================================
 
 ## Give a Star! :star:
@@ -13,4 +13,13 @@ I used three first phases from EventStorming BigPicture to create a model of Cin
 
 To create Model C4 diagrams I did not need a whole and detailed model with all events ;)
 
-![EventStorming](images/cinema_event_storming_first_session.png)
+![EventStorming](images/C1/event_storming_big_picture.png)
+
+But after this step. I can saw some components for C1 System Context.
+That's are Events as my Cinema Domain, Actors as Persons, and External Systems.
+
+And now I can show the first layer of C4 Model.
+![C1-SystemContext](images/C1/c1_system_context.png)
+
+Of course, the legend is necessary.
+![C1-SystemContext](images/C1/c1_system_context_c1_system_context.png.png)
