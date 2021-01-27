@@ -22,4 +22,4 @@ And now I can show the first layer of C4 Model.
 ![C1-SystemContext](images/C1/c1_system_context.png)
 
 Of course, the legend is necessary.
-![C1-SystemContext](images/C1/c1_system_context_c1_system_context.png.png)
+![C1-SystemContext](images/C1/c1_system_context_legend.png)
