@@ -8,7 +8,7 @@ If you like this project, learn something, or are using it in your applications,
 
 Newsletter for this project in Polish: [ModelC4.pl](https://modelc4.pl)
 
-## First step is a BigPicture
+## First step is a BigPicture, and C1 System Context
 I used three first phases from EventStorming BigPicture to create a model of Cinema.
 
 To create Model C4 diagrams I did not need a whole and detailed model with all events ;)
