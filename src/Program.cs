@@ -16,7 +16,7 @@ namespace CinemaC4Model {
 
             //https://structurizr.com/workspace/62359
             var workspace = new Workspace("Cinema System", "This is a model of Cinema software system.");
-            systemContextLayer.AddLayeToModel(workspace);
+            systemContextLayer.AddLayerToModel(workspace);
             c4Style.CreateStyle(workspace);
             c4Uploader.UploadWorkspaceToStructurizr(workspace, appConfig.Structurizer);
         }
