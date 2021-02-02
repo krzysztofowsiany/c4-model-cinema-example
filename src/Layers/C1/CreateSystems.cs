@@ -6,7 +6,7 @@ namespace CinemaC4Model.Layers.C1 {
     internal class CreateSystems {
         protected CreateSystems(Model model)
         {
-           model.CreateSystem(SoftwareSystems.CinemaSystem, "Cinema software system.", SoftwareSystemTags.CinemaSystemTag);
+            model.CreateSystem(SoftwareSystems.CinemaSystem, "Cinema software system.", SoftwareSystemTags.CinemaSystemTag);
             model.CreateSystem(SoftwareSystems.GutekSystem, "Movie Database System.", SoftwareSystemTags.ExternalSystemTag);
             model.CreateSystem(SoftwareSystems.MailSystem, "System to sending e-mails.", SoftwareSystemTags.ExternalSystemTag);
             model.CreateSystem(SoftwareSystems.PaymentSystem, "Payment System.", SoftwareSystemTags.ExternalSystemTag);

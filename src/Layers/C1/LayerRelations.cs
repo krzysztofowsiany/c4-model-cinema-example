@@ -16,18 +16,18 @@ namespace CinemaC4Model.Layers.C1
             var employeePerson = model.GetPersonWithName(Persons.Employee);
             var customerPerson = model.GetPersonWithName(Persons.Customer);
 
-            employeePerson.Uses(cinemaSoftwareSystem, "Sell ticket and make repertoire", "HTTPS");
-            employeePerson.Uses(cinemaSoftwareSystem, "Sell ticket and make repertoire", "HTTPS");
+            employeePerson.Uses(cinemaSoftwareSystem, "Sell ticket and make repertoire");
+            employeePerson.Uses(cinemaSoftwareSystem, "Sell ticket and make repertoire");
 
-            customerPerson.Uses(cinemaSoftwareSystem, "Reserving seat in cinema", "HTTPS");
-            customerPerson.Uses(cardProviderSoftwareSystem, "Pay by card", "Terminal");
-            customerPerson.Uses(paymentProviderSoftwareSystem, "Pay over internet", "HTTPS");
-            customerPerson.InteractsWith(employeePerson, "Reserving ticket", "Talk");
-            mailProviderSoftwareSystem.Delivers(customerPerson, "Sends e-mails to", "SMTP");
+            customerPerson.Uses(cinemaSoftwareSystem, "Reserving seat in cinema");
+            customerPerson.Uses(cardProviderSoftwareSystem, "Pay by card");
+            customerPerson.Uses(paymentProviderSoftwareSystem, "Pay over internet");
+            customerPerson.InteractsWith(employeePerson, "Reserving ticket");
+            mailProviderSoftwareSystem.Delivers(customerPerson, "Sends e-mails to");
 
-            cinemaSoftwareSystem.Uses(mailProviderSoftwareSystem, "Sends e-mails", "SMTP");
-            cinemaSoftwareSystem.Uses(gutekMovieSoftwareSystem, "Get movie list", "HTTPS");
-            cinemaSoftwareSystem.Uses(printerSoftwareSystem, "Print ticket", "Driver");
+            cinemaSoftwareSystem.Uses(mailProviderSoftwareSystem, "Sends e-mails");
+            cinemaSoftwareSystem.Uses(gutekMovieSoftwareSystem, "Get movie list");
+            cinemaSoftwareSystem.Uses(printerSoftwareSystem, "Print ticket");
         }
 
         internal static void Create(Model model)

@@ -33,9 +33,20 @@ namespace CinemaC4Model.Layers {
                     FontSize = 34
             });
 
-            styles.Add(new ElementStyle(Tags.Container) { Background = "#438dd5", Color = "#ffffff" });
-            styles.Add(new ElementStyle(Tags.Component) { Background = "#85bbf0", Color = "#000000" });
-        }
+            styles.Add(new ElementStyle(Tags.Container) {
+                Background = "#438dd5",
+                    Color = "#ffffff"
+            });
 
+            styles.Add(new ElementStyle(Tags.Component) {
+                Background = "#85bbf0",
+                    Color = "#000000"
+            });
+
+            styles.Add(new RelationshipStyle(Tags.Relationship) {
+                Color = "#ff0000",
+                FontSize = 34
+            });
+        }
     }
 }
