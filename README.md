@@ -23,3 +23,12 @@ And now I can show the first layer of C4 Model.
 
 Of course, the legend is necessary.
 ![C1-SystemContext](images/C1/c1_system_context_legend.png)
+
+## Now is time to another level 2 which is C2 Container
+At this level, I used BigPicture to determine inputs in the system, potential technologies, intentions, and protocols.
+
+This information can be created on the brainstorm and write on events, notes, external systems, or other ES element.
+
+By red dot, I marked important pieces of information.
+
+![EventStorming](images/C2/../C1/C2/event_storming_big_picture_inputs.png)
