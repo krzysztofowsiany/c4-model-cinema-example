@@ -31,4 +31,4 @@ This information can be created on the brainstorm and write on events, notes, ex
 
 By red dot, I marked important pieces of information.
 
-![EventStorming](images/C2/../C1/C2/event_storming_big_picture_inputs.png)
+![EventStorming](images/C2/cinema_event_storming_inputs.png)
