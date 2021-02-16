@@ -1,3 +1,4 @@
+using System;
 using CinemaC4Model.Enums;
 using CinemaC4Model.Extensions;
 using Structurizr;
@@ -8,6 +9,56 @@ namespace CinemaC4Model.Layers {
         internal void CreateStyle(Workspace workspace) {
             var styles = workspace.Views.Configuration.Styles;
 
+            SoftwareSystemsStylize(styles);
+            ContainersStylize(styles);
+        }
+
+        private void ContainersStylize(Styles styles)
+        {
+            styles.Add(new ElementStyle(Tags.Container) {
+                Color = "#000000"
+            });
+
+            styles.Add(new ElementStyle(ContainerTags.Database) {
+                Background = "#A8A8A8",
+                    Color = "#000000",
+                    Shape = Shape.Cylinder,
+                    FontSize = 34
+            });
+
+            styles.Add(new ElementStyle(ContainerTags.WebPage) {
+                Background = "#f89e41",
+                    Color = "#000000",
+                    Shape = Shape.WebBrowser,
+                    FontSize = 30
+            });
+
+            styles.Add(new ElementStyle(ContainerTags.WindowsApplication) {
+                Background = "#2E7AFF",
+                    Color = "#000000",
+                    Shape = Shape.Component,
+                    FontSize = 30
+            });
+
+            styles.Add(new ElementStyle(ContainerTags.RESTAPI) {
+                Background = "#f89e41",
+                    Color = "#000000",
+                    Shape = Shape.Hexagon,
+                    FontSize = 34,
+                    Width = 500,
+                    Height = 500
+            });
+
+            styles.Add(new RelationshipStyle(RelationshipTags.Internal) {
+                Color = "#005DFF",
+                FontSize = 34,
+                Thickness = 5,
+                Dashed = false
+            });
+        }
+
+        private void SoftwareSystemsStylize(Styles styles)
+        {
             styles.Add(new ElementStyle(Tags.SoftwareSystem) {
                 Color = "#000000"
             });
@@ -31,16 +82,6 @@ namespace CinemaC4Model.Layers {
                     Color = "#000000",
                     Shape = Shape.Person,
                     FontSize = 34
-            });
-
-            styles.Add(new ElementStyle(Tags.Container) {
-                Background = "#438dd5",
-                    Color = "#ffffff"
-            });
-
-            styles.Add(new ElementStyle(Tags.Component) {
-                Background = "#85bbf0",
-                    Color = "#000000"
             });
 
             styles.Add(new RelationshipStyle(Tags.Relationship) {
