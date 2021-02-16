@@ -11,12 +11,13 @@ namespace CinemaC4Model.Layers.C2 {
             var contextView = workspace.Views
                 .CreateContainerView(
                     cinemaSoftwareSystem,
-                    "System Context",
-                    "An example of a System Context diagram for Cinema.");
+                    "Cinema System Containers",
+                    "An example of a Containers diagram for Cinema.");
 
-            contextView.PaperSize = PaperSize.A5_Portrait;
-            contextView.EnableAutomaticLayout(RankDirection.RightLeft, 300, 100, 150, true);
+            contextView.PaperSize = PaperSize.A4_Landscape;
+            contextView.EnableAutomaticLayout(RankDirection.TopBottom, 300, 100, 150, true);
             contextView.AddAllSoftwareSystems();
+            contextView.AddAllContainers();
             contextView.AddAllPeople();
         }
 
