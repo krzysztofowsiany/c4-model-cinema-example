@@ -32,3 +32,15 @@ This information can be created on the brainstorm and write on events, notes, ex
 By red dot, I marked important pieces of information.
 
 ![EventStorming](images/C2/cinema_event_storming_inputs.png)
+
+I describe some paths in EventStorming BigPicture. That is a way to identity inputs in the system. 
+Another important piece of information we can add when adding comments on are of the process because in brainstorm/discussion we see more and sometimes chosen tools. 
+
+Many things are hidden by the conversation between attendants. We should note this interesting information. Because we work at the problem and pick solution...
+
+
+Is time to show what I found in EventStorming and prepare some Containers in Level two in Model C4.
+![C2-Container](images/C2/c2_container.png)
+
+In legend is little more elements.
+![C2-Container](images/C2/c2_container_legend.png)
